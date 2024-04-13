@@ -13,7 +13,12 @@ const Header = () => {
       </div>
 
       <input className="contenedorB" type="text" id="s" value="" placeholder="Buscar"  />
+
+        <div>
+          <Link className="contenedorA" to='/'> <FaUser/> Inicio </Link>
+      </div>
       
+
       <div>
           <Link className="contenedorA" to='/login'> <FaUser/> Login </Link>
         </div>
