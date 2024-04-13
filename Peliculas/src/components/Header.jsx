@@ -12,7 +12,7 @@ const Header = () => {
         <img src={imagen} alt="" className="headerLogo"/>
       </div>
 
-      <input className="contenedorB" type="text" id="s" value="" placeholder="Buscar"  />
+      <input className="contenedorB" type="search" id="s" value="" placeholder="Buscar"  />
 
         <div>
           <Link className="contenedorA" to='/'> <FaUser/> Inicio </Link>
