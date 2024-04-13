@@ -1,5 +1,6 @@
 import { FaUser,  FaUserPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import imagen from "/assets/letra-p.png";
 
 const Header = () => {
   return (
@@ -7,8 +8,8 @@ const Header = () => {
         <header>
     <div className="headerContenedor">
 
-      <div className="contenedorA">
-        <img src="https://www.flaticon.es/icono-gratis/letra-p_3665997?term=p&page=1&position=3&origin=search&related_id=3665997" alt="" />
+      <div>
+        <img src={imagen} alt="" className="headerLogo"/>
       </div>
 
       <input className="contenedorB" type="text" id="s" value="" placeholder="Buscar"  />
