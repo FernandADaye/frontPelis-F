@@ -9,9 +9,9 @@ const App = () => {
     <>
     <Router>
       <div className='container'>
-      <Routes>
+        <Header/>
+      < Routes>
         {/* aqui estan las rutas */}
-        <Route path='/h' element={<Header/>}/>
         <Route path= '/' element={<Dashboard/>}/>
         <Route path= '/login' element={<Login/>}/>
         <Route path= '/register' element={<Register/>}/>
