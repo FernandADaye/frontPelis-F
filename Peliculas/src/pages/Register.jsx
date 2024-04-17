@@ -1,5 +1,5 @@
 import { FaUser } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState,  } from "react";
 
 
 
@@ -13,7 +13,9 @@ const Register = () => {
 
   const {name, email, password, password2} = fromData
 
-
+  const onSubmit= (e)=>{
+    e.preventDefault()
+  }
 
   
   const onChange = (e)=>{
@@ -31,6 +33,7 @@ const Register = () => {
       <div className="contenedorL">
       <FaUser className="registerUserL"/> 
       </div>
+<form onSubmit={onSubmit} className="formRegister">
 {/* nombre */}
         <div><input
         type="text" 
@@ -68,10 +71,14 @@ const Register = () => {
         placeholder="Confirma tu contraseña"
         onChange={onChange}/> </div>
 {/* botón */}
-      <div><input 
-      type="button"
-      className="contenedorBt" 
-      value="boton" /></div>
+      <div>
+        <button type='submit' className="contenedorBt" 
+>
+          crear
+        </button>
+
+      </div>
+      </form>
     </div>
 </>
   )

@@ -90,6 +90,8 @@ body{
     border-radius: 20px; 
     box-shadow: 0 0 10px rgba(26, 25, 25, 0.747); 
     transition: 1s;
+    margin: 10px;
+
 }
 .contenedorB:hover{
     transition: 1s;
@@ -105,18 +107,22 @@ body{
 
 .contenedorBt{
     border: none;
-    padding: 40px;
-    padding-left: 50px;
-    border: none; 
     outline: none;
+    width: 189px;
     background-color: rgba(245, 242, 255, 0.767); 
     padding: 10px; 
     border-radius: 20px; 
     box-shadow: 0 0 10px rgba(26, 25, 25, 0.747); 
     transition: 1s;
+    margin: 10px;
 }
 .contenedorBt:hover{
     -webkit-box-shadow: 0px 0px 76px -4px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 76px -4px rgba(0,0,0,1);
     box-shadow: 0px 0px 76px -4px rgba(0,0,0,1);
+}
+.formRegister{
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
