@@ -1,4 +1,4 @@
-import { FaUser,  FaUserPlus } from "react-icons/fa";
+import { FaUser,  FaUserPlus, FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import imagen from "/assets/letra-p.png";
 
@@ -15,7 +15,7 @@ const Header = () => {
       <input className="contenedorB" type="search" id="s" value="" placeholder="Buscar"  />
 
         <div>
-          <Link className="contenedorA" to='/'> <FaUser/> Inicio </Link>
+          <Link className="contenedorA" to='/'> <FaHome/> Inicio </Link>
       </div>
       
 
