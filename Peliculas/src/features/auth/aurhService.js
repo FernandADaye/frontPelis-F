@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'https://tan-strange-firefly.cyclic.app/users/'
+const API_URL = 'https://tan-strange-firefly.cyclic.app/users/crear'
 
 
 // peticion al backend
