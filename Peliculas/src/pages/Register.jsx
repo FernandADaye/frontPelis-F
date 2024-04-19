@@ -1,9 +1,9 @@
 import { FaUser } from "react-icons/fa";
-import { useEffect, useState,  } from "react";
+import { useState, useEffect } from "react";
 import {useSelector, useDispatch} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
-import {reset, register } from '../features/auth/authSlice '
+import {reset, register } from '../features/auth/authSlice'
 import Spinner from "../components/Spinner";
 
 const Register = () => {
@@ -19,7 +19,8 @@ const navigate = useNavigate()
 const dispatch = useDispatch()
 
 const {user, isLoading, isError, isSuccess, message} =useSelector((state) => state.auth)
-  const onSubmit= (e)=>{
+
+  const onSubmit = (e) =>{
     e.preventDefault()
 
     if(password!==password2){
