@@ -1,5 +1,5 @@
 import { FaUser } from "react-icons/fa";
-import { useState,  } from "react";
+import { useEffect, useState,  } from "react";
 import {useSelector, useDispatch} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
@@ -30,10 +30,21 @@ const {user, isLoading, isError, isSuccess, message} =useSelector((state) => sta
       }
       dispatch(register(userData))
     }
-
   }
 
-  
+  useEffect(() =>{
+    if(isError){
+      toast.error(message)
+    } 
+    if(isSuccess){
+      navigate('/login')
+    }
+    dispatch(reset())
+  },[user, isError, isSuccess, message, navigate, dispatch])
+
+  if(isLoading){
+    // spiner
+    }
   const onChange = (e)=>{
     setFromData((prevState) =>({
       ...prevState, 
