@@ -4,7 +4,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import {useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import {reset, register } from '../features/auth/authSlice '
-
+import Spinner from "../components/Spinner";
 
 const Register = () => {
   const [fromData, setFromData] = useState({
@@ -43,7 +43,7 @@ const {user, isLoading, isError, isSuccess, message} =useSelector((state) => sta
   },[user, isError, isSuccess, message, navigate, dispatch])
 
   if(isLoading){
-    // spiner
+    return <Spinner/>
     }
   const onChange = (e)=>{
     setFromData((prevState) =>({
