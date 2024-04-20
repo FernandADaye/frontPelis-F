@@ -38,7 +38,7 @@ const {user, isLoading, isError, isSuccess, message} =useSelector((state) => sta
       toast.error(message)
     } 
     if(isSuccess){
-      navigate('/login')
+      navigate('/')
     }
     dispatch(reset())
   },[user, isError, isSuccess, message, navigate, dispatch])
