@@ -20,8 +20,15 @@ if(response.data){
 return response.data;
 };
 
+
+//  logOut
+const logout =()=>{
+    localStorage.removeItem('user')
+}
+
 const authService = {
 register,
 login,
+logout
 };
 export default authService;
