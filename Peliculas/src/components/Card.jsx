@@ -1,30 +1,31 @@
+import { useState } from "react"
 
-import { useState } from 'react';
 
 const Card = () => {
-    const [isExpanded, setIsExpanded] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsExpanded(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsExpanded(false);
+    const [isVisible, setIsVisible] = useState(false)
+    
+    const toggleVisibility  =() =>{
+        setIsVisible(!isVisible)
     }
+    
+    
+    
+
 return (
     <>
- <div className={`card ${isExpanded ? 'expanded' : ''}`}>
-      <div className="poster" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <img src="https://i.pinimg.com/564x/b1/2b/45/b12b4552fe9acb4b6c6d956deeabf38d.jpg" alt="Poster de la película" />
-      </div>
-      <div className="details">
-        <h2>Título de la Película</h2>
-        <p>Año: 2024</p>
-        <p>Director: Nombre del Director</p>
-        <p>Género: Género de la Película</p>
-      </div>
-    </div>
+    <section className="allCard">
 
+    <div className="containerCard">
+        <div className="image-container">
+            <img src="https://i.pinimg.com/236x/20/35/3e/20353e9c2f7dd444eae9cf9a14c38740.jpg" alt="" onClick={toggleVisibility} />
+        </div>
+
+        <div className="infoCard" style={{ visibility: isVisible ? 'visible' : 'hidden' }}>
+            <h1>mas infomacion </h1>
+        </div>
+    </div>
+    </section>
 
 
     </>

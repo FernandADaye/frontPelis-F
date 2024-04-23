@@ -160,50 +160,30 @@ body{
     33%  {background-position:    0% 33% ,100% 33% ,200% 33% }
     66%  {background-position: -100%  66%,0%   66% ,100% 66% }
     100% {background-position:    0% 100%,100% 100%,200% 100%}
+    }
+    .containerCard {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        height: 100vh;
+        margin: 2%;
+}
+    .image-container {
+        position: relative;
+}
+.image-container img {
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
 }
 
 
 
-.card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 50px auto;
-}
-  
-  .poster {
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    transition: 1s;
 
-}
-  
-  .poster img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .details {
-    display: none;
-    text-align: center;
-    background-color: #7171746b;
-    transition: 3s;
-  }
-  
-  .expanded .poster {
-    width: 208px;
-    height: 302px;
-    transition: 1s;
 
-  }
-  
-  .expanded .details {
-    display: block;
-    width: 208px;
-height: 302px;
-transition: 2s;
 
-  }
-  
+
+
+
 
