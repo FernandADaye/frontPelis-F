@@ -1,9 +1,14 @@
+import Card from "../components/Card"
 
 const Dashboard = () => {
   return (
     <>
 
-    <h1>Bienvenido al mundo Dashboard</h1> 
+    <div className="componentsCardPeli">
+    <Card></Card>
+
+    </div>
+    
     
     </>
   )
